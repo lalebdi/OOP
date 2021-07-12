@@ -22,3 +22,21 @@ class Spain():
 
     def language(self):
         print("Spanish")
+
+
+queen = UK()
+queen.capital_city()
+
+zara = Spain()
+zara.capital_city()
+
+for country in (queen, zara):
+    country.capital_city()
+    country.language()
+
+
+def europe(eu):
+    eu.capital_city()
+
+
+europe(zara)
