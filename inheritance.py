@@ -9,3 +9,12 @@ class Person:
 florist = Person("Jane", "Doe")
 
 florist.printName()
+
+
+class Lawyers(Person): # if you create a child class without a constructor, it will inherit all methods and attributes
+    pass
+
+
+immigration_lawyer = Lawyers("John", "Blah")
+
+immigration_lawyer.printName()
