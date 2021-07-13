@@ -17,4 +17,10 @@ nissan = Cars(250, "Red")
 toyota = Cars(120, "Silver")
 
 
+print(ford.get_speed())
+ford.set_speed(180)
+print(ford.get_speed())
+
+ford.speed = 150
+print(ford.get_speed())
 
