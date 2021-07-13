@@ -2,14 +2,14 @@
 
 class Cars:
     def __init__(self, speed, color):
-        self.speed = speed
-        self.color = color
+        self.__speed = speed # made it private
+        self.__color = color
 
     def set_speed(self, value):
-        self.speed = value
+        self.__speed = value
 
     def get_speed(self):
-        return self.speed
+        return self.__speed
 
 
 ford = Cars(200, "Blue")
