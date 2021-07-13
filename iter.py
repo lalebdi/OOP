@@ -23,15 +23,21 @@ class Counting:
         return self
 
     def __next__(self):
-        x = self.a
-        self.a += 1
-        return x
+        if self.a <= 19:
+            x = self.a
+            self.a += 1
+            return x
+        else:
+            raise StopIteration
 
 newObj = Counting()
 # print(newObj)
 objiter = iter(newObj)
 # print(objiter)
 
-print(next(objiter))
-print(next(objiter))
-print(next(objiter))
+for i in objiter:
+    print(i)
+
+# print(next(objiter))
+# print(next(objiter))
+# print(next(objiter))
